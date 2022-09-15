@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Order </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Architects+Daughter&family=Arvo&family=Blaka&family=Comfortaa:wght@300&family=Dancing+Script:wght@600;700&family=Indie+Flower&family=League+Gothic&family=Lobster&family=Mochiy+Pop+P+One&family=Overpass&family=Quintessential&family=Righteous&family=Sarpanch:wght@500&family=Shadows+Into+Light&family=Source+Serif+Pro:wght@600&family=Yuji+Boku&family=Zilla+Slab:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="col1-bg">
+    <!-- Navigation bar -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark m-auto navbr">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse m-0" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0 d-flex align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html"><span
+                                class="text-col2">Home</span> </a>
+                    </li>
+
+                    <li class=" logo-name">
+                        <a class="nav-link" href="#">
+                            <h1 class="text-col3  cool-font logo-name text-center">Florista</h1>
+                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link link-secondary" href="/register.html"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="36" height="36" fill="currentColor" class="bi bi-person-circle"
+                                viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                <path fill-rule="evenodd"
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                            </svg></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="alert rounded-0 p-0 top w-100 d-flex pr-4 col3-bg">
+            <div class="container-fluid d-flex">
+                <a class="navbar-brand" href="#"><img src="/icons/logo.png" alt="flora" height="50px" width="50px">
+                </a>
+                <h5 class="m-4 text-white corner">FAQs | Help | Support</h5>
+
+
+            </div>
+    </header>
+    <div class="container m-5 " id="main">
+        <form class="row g-2" style="width: 80%; margin:auto " method="post" action="index.php">
+            <hr>
+            <div class="container mt-4" id="orderNow">
+                <div>
+                    <h2><img src="./icons/clipboard.png" alt="">
+                        Order Now!</h2>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="col-12" id="up">
+
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="col-12">
+
+                <input type="text" class="form-control" id="email" placeholder="Enter your email-id">
+            </div>
+            <div class="col-12">
+
+                <input type="text" class="form-control" id="phone" placeholder="Enter your phone number">
+            </div>
+
+            <div class="form-floating">Address:
+                <textarea class="form-control" placeholder="Leave a comment here" id="address"></textarea>
+
+            </div>
+            <div class="col-md-4">
+
+                <select id="inputState" class="form-select">
+                    <option selected>Maharashtra</option>
+                    <option>Goa</option>
+                    <option>Kerala</option>
+                    <option>Telangana</option>
+                    <option>Andhra Pradesh</option>
+                    <option>Uttar Pradesh</option>
+                    <option>Tamil Nadu</option>
+                    <option>Delhi</option>
+                    <option>Rajasthan</option>
+                    <option>West Bengal</option>
+                    <option>Odisha</option>
+                    <option>Punjab</option>
+                    <option>Gujarat</option>
+                </select>
+            </div>
+
+            <div class="col-md-6">
+
+                <input type="text" placeholder="City" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-2">
+
+                <input type="text" placeholder="Pin-Code" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+
+                <input type="text" class="form-control" id="productid" placeholder="Enter Product-Id">
+            </div>
+            <div class="col-12">
+
+                <input type="text" class="form-control" id="quantity" placeholder="Quantity">
+            </div>
+
+
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Check me out
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <label for="submit" class="form-label"></label>
+                <input type="submit" value="Submit" class="form-control button1" style="padding:1rem;font-size:1.2rem"
+                    id="submit">
+            </div>
+        </form>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

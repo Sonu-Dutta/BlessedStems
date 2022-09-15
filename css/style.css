@@ -1,0 +1,444 @@
+:root {
+    --col1: #dbe7ef;
+    --col2: #01949A;
+    --col3: #004369;
+    --col4: #905171;
+}
+
+/* btn */
+.button1 {
+    padding: 10px 35px;
+    outline: none;
+    border: none;
+    background-color: var(--col3);
+    color: #fefeff;
+    text-decoration: none;
+}
+
+.button1:hover,
+.button2:hover {
+    transform: scale(.9);
+}
+
+
+.button2 {
+    padding: 10px 35px;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    background-color: white;
+    color: var(--col3);
+    border: 1px solid var(--col3);
+}
+
+
+
+
+/* navbar */
+* {
+    padding: 0;
+    margin: 0;
+    transition: all .5s ease-in-out;
+    font-family: 'Zilla Slab', serif;
+    font-weight: 400;
+}
+
+.navbr {
+    background-color: white;
+}
+
+.cool-font,
+h1 {
+    font-family: 'Righteous', cursive;
+}
+
+.col1-bg {
+    background-color: var(--col1);
+}
+
+.col2-bg {
+    background-color: var(--col2);
+}
+
+.col3-bg {
+    background-color: var(--col3);
+}
+
+.text-col3 {
+    color: var(--col3);
+}
+
+.text-col2 {
+    color: var(--col2);
+}
+
+.text-col4 {
+    color: var(--col4);
+}
+
+.top {
+    height: 6rem;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    font-family: 'Zilla Slab', serif;
+}
+
+.top {
+    height: 6rem;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    font-family: 'Zilla Slab', serif;
+}
+
+.top h5 {
+    font-size: .8rem;
+}
+
+.f-img {
+    width: 3.5rem;
+    position: relative;
+    bottom: 0.7rem;
+}
+
+nav {
+    z-index: 1000;
+    position: relative;
+    top: 4rem;
+    border-radius: 2rem;
+    height: 4rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.nav-link {
+    font-family: 'Zilla Slab', serif;
+}
+
+.nav-link:hover {
+    transform: scale(0.9);
+}
+
+.socials svg {
+    color: white;
+}
+
+.socials svg:hover {
+
+    transform: scale(1.5) rotate(360deg);
+    transition: all 0.3s ease-in-out;
+}
+
+/* carousel */
+.carousel-items {
+    height: 90vh;
+    position: relative;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 28%;
+    right: inherit;
+}
+
+.carousel-item-1 {
+    transform: scaleX(-1);
+}
+
+/* services */
+.accordion-button img {
+    width: 50px;
+}
+
+/* slide */
+.flower {
+    width: 100%;
+    background: url('../images/10.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 71.9125px;
+    padding: 4.375rem;
+
+}
+
+.cool-font {
+    font-family: 'Dancing Script', cursive;
+}
+
+/* products */
+
+.card {
+    position: relative;
+}
+
+.card-body,
+.rating,
+.money,
+.lik,
+.add {
+    position: absolute;
+    z-index: 10;
+}
+
+.card-body {
+    bottom: 0;
+    left: 0;
+    background: rgb(216, 234, 238, .3);
+}
+
+.rating {
+    top: 1rem;
+    left: 2rem;
+    color: orange;
+}
+
+.money {
+    top: 3rem;
+    left: 2rem;
+    display: flex;
+    gap: .57em;
+}
+
+.lik {
+    top: 1rem;
+    right: 2rem;
+}
+
+.add {
+    top: 1rem;
+    right: 5rem;
+}
+
+.add:hover {
+    transform: rotate(360deg);
+}
+
+.money:first-child {
+    font-size: 1.2rem;
+}
+
+.money span {
+    text-decoration: line-through;
+}
+
+.money h6 {
+    font-size: 1.3rem;
+}
+
+.card-body h4 {
+    font-size: 2rem;
+}
+
+.lik,
+.add {
+    color: white;
+    cursor: pointer;
+}
+
+.card-body p {
+    font-family: 'Dancing Script', cursive;
+}
+
+
+/* features */
+.tick img {
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    bottom: .3rem;
+}
+
+/* sign */
+.sign_section {
+    background-color: #d3dbdd;
+    color: #fefefe;
+}
+
+.sign_section h3 {
+    text-transform: uppercase;
+}
+
+.sign_section .row {
+    align-items: center;
+}
+
+.sign_section form {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sign_section form input {
+    width: 75%;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+}
+
+/* info section */
+.info_section {
+    background-color: #272727;
+}
+
+.links_container {
+    color: #fefeff;
+}
+
+.links_container h3 {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.links_container ul {
+    padding: 15px 0 0 0;
+}
+
+.links_container li {
+    list-style-type: none;
+}
+
+.links_container li a {
+    padding: 5px 0;
+    color: #fefeff;
+}
+
+.links_container li :hover {
+    color: rgb(96, 223, 232);
+}
+
+.follow_container {
+    margin-top: 50px;
+}
+
+.follow_container .row {
+    align-items: center;
+}
+
+.app_container {
+    display: flex;
+    align-items: center;
+}
+
+.app_container h3 {
+    font-size: 24px;
+    margin-right: 20px;
+    color: #fefeff;
+}
+
+.app_container>div {
+    display: flex;
+    align-items: center;
+}
+
+.app_container img {
+    width: 175px;
+    margin-right: 10px;
+}
+
+.info_social {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+}
+
+.info_social img {
+    width: 40px;
+    margin-left: 8px;
+}
+
+.info_social a img:hover {
+    transform: rotate(360deg) scale(0.9);
+
+}
+
+/* media */
+
+@media(max-width:992px) {
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        gap: -1rem;
+        background-color: rgb(255, 255, 255, .9);
+    }
+
+    .navbr {
+        background-color: var(--col3);
+    }
+
+    .top h5 {
+        font-size: .6rem;
+    }
+
+    .carousel-items {
+        height: 30vh;
+        margin-top: 2.4rem;
+    }
+
+    .carousel-caption {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: scale(.7);
+        margin-bottom: 1rem;
+        height: 15rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1.1rem;
+
+    }
+
+    .design {
+        width: 17.5rem;
+        height: 33rem;
+    }
+
+    .nav-item {
+        margin: -3px;
+    }
+
+    .logo-name {
+        position: absolute;
+        top: 18%;
+        left: 35%;
+        color: white;
+    }
+
+    .nav-item:first-child {
+        margin-top: .7rem;
+    }
+
+    .corner {
+        font-size: .9rem;
+    }
+
+    .feature-img1 {
+        margin-top: 2rem;
+    }
+
+    .money {
+        bottom: 3.5rem;
+    }
+
+    .rating {
+        bottom: 4rem;
+    }
+
+    .lik {
+        bottom: 6rem;
+    }
+
+    .add {
+        bottom: 6.5rem;
+    }
+
+
+    .sign_section button {
+        font-size: .9rem;
+    }
+
+    .app_container img,
+    .info_social a img {
+        transform: scale(.8);
+    }
+
+}
